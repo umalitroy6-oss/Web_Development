@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+    
+ 
+
+<h2>CPU Scheduling</h2>
+
+<table>
+    <tr>
+        <th>Process</th>
+        <th>Arrival Time (AT)</th>
+        <th>Burst Time (BT)</th>
+        <th>Completion Time (CT)</th>
+        <th>Turnaround Time (TAT)</th>
+        <th>Waiting Time (WT)</th>
+    </tr>
+
+    <tr>
+        <td>P1</td>
+        <td>4</td>
+        <td>5</td>
+        <td>10</td>
+        <td>6</td>
+        <td>1</td>
+    </tr>
+
+    <tr>
+        <td>P2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>3</td>
+        <td>0</td>
+    </tr>
+
+    <tr>
+        <td>P3</td>
+        <td>5</td>
+        <td>2</td>
+        <td>12</td>
+        <td>7</td>
+        <td>5</td>
+    </tr>
+
+    <tr>
+        <td>P4</td>
+        <td>15</td>
+        <td>4</td>
+        <td>19</td>
+        <td>4</td>
+        <td>0</td>
+    </tr>
+
+    <tr>
+        <th colspan="4">Average Turnaround Time</th>
+        <td colspan="2">5</td>
+    </tr>
+
+    <tr>
+        <th colspan="4">Average Waiting Time</th>
+        <td colspan="2">1.5</td>
+    </tr>
+</table>
+
+<h2>Gantt Chart</h2>
+
+<table class="gantt">
+    <tr>
+        <td>Idle</td>
+        <td>P2</td>
+        <td>P1</td>
+        <td>P3</td>
+        <td>Idle</td>
+        <td>P4</td>
+    </tr>
+
+    <tr class="time">
+        <td><pre>      0</pre></td>
+        <td><pre>      2</pre></td>
+        <td><pre>      5</pre></td>
+        <td><pre>      10</pre></td>
+        <td><pre>      12</pre></td>
+        <td><pre>      15</pre></td>
+        <td><pre>         19</pre></td>
+    </tr>
+</table>
+
+
+
+<script type="module" src="https://s.brightspace.com/lib/bsi/2026.7.210/unbundled/mathjax.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math, .d2l-element, .d2l-cplus-layout') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						document.querySelectorAll('math mmultiscripts > none').forEach(elm => {
+							const mrow = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'mrow');
+							elm.replaceWith(mrow);
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							outputScale: 1.5,
+							renderLatex: false,
+							enableMML3Support: false
+						});
+					}
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.7.210/unbundled/prism.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script type="module" src="https://s.brightspace.com/lib/bsi/2026.7.210/unbundled/embeds.js"></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+					window.D2L.EmbedRenderer.renderEmbeds(document.body);
+				});</script></body></html>
