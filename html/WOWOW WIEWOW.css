@@ -1,0 +1,51 @@
+<style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f5f5f5;
+            text-align:center;
+        }
+
+        table{
+            margin:auto;
+            border-collapse:collapse;
+            width:70%;
+            background:white;
+        }
+
+        th, td{
+            border:1px solid black;
+            padding:10px;
+            text-align:center;
+        }
+
+        th{
+            background:#40a8b5;
+            color:white;
+        }
+
+        h2{
+            color:#333;
+        }
+
+        .gantt{
+            margin:30px auto;
+            border-collapse:collapse;
+        }
+
+        .gantt td{
+            border:2px solid black;
+            padding:20px;
+            min-width:80px;
+            font-weight:bold;
+        }
+
+        .time td{
+            border:none;
+            padding-left:10px;
+            font-weight:bold;
+            position: relative;
+            top:-20px;
+            right:95px;
+        }
+    </style>
+</head>

@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  width: 340px;
+  animation: slideFadeIn 0.6s ease-out;
+}
+
+/* Form entrance animation */
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+label {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+  opacity: 0;
+  animation: fadeInLabel 0.5s ease forwards;
+}
+
+/* Stagger label fade-ins */
+form label:nth-of-type(1) { animation-delay: 0.2s; }
+form label:nth-of-type(2) { animation-delay: 0.35s; }
+form label:nth-of-type(3) { animation-delay: 0.5s; }
+form label:nth-of-type(4) { animation-delay: 0.65s; }
+
+@keyframes fadeInLabel {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+input:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 4px rgba(118, 75, 162, 0.15);
+  transform: scale(1.02);
+}
+
+/* Gentle shake animation when a required field is invalid */
+input:invalid:not(:placeholder-shown):not(:focus) {
+  animation: shake 0.4s ease;
+  border-color: #e74c3c;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background-size: 200% 200%;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: fadeInLabel 0.5s ease forwards, gradientShift 4s ease infinite;
+  animation-delay: 0.8s, 0s;
+  opacity: 0;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(118, 75, 162, 0.4);
+}
+
+button:active {
+  transform: translateY(0) scale(0.97);
+}

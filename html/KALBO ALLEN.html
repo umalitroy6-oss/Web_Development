@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Camp Registration Form</title>
+</head>
+<body>
+
+<center>
+<table width="350" cellpadding="0" cellspacing="0" border="0">
+<tr><td align="center">
+
+  <h3>Family Camp Registration Form</h3>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend><small>Participant Information</small></legend>
+
+      <label for="fullname"><small>Full Name:</small></label><br>
+      <input type="text" id="fullname" name="fullname" size="30" placeholder="Juan Dela Cruz"><br><br>
+
+      <label for="address"><small>Address:</small></label><br>
+      <input type="text" id="address" name="address" size="30" placeholder="123 Rizal St., Cavite"><br><br>
+
+      <label for="email"><small>Email Address:</small></label><br>
+      <input type="email" id="email" name="email" size="30" placeholder="juan@email.com"><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><small>Camp Details</small></legend>
+
+      <label for="agegroup"><small>Age Group:</small></label><br>
+      <select id="agegroup" name="agegroup">
+        <option value="child">Child (6-12)</option>
+        <option value="teen">Teen (13-17)</option>
+        <option value="adult">Adult (18-59)</option>
+        <option value="senior">Senior (60+)</option>
+      </select><br><br>
+
+      <label><small>Meal Preference:</small></label><br>
+      <input type="radio" id="regular" name="meal" value="regular">
+      <label for="regular"><small>Regular</small></label>
+
+      <input type="radio" id="vegetarian" name="meal" value="vegetarian">
+      <label for="vegetarian"><small>Vegetarian</small></label>
+
+      <input type="radio" id="vegan" name="meal" value="vegan">
+      <label for="vegan"><small>Vegan</small></label><br><br>
+
+      <label for="notes"><small>Special Requests / Additional Notes:</small></label><br>
+      <textarea id="notes" name="notes" rows="3" cols="30" placeholder="Allergies, mobility needs, etc."></textarea><br><br>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit Registration</button>
+
+  </form>
+
+</td></tr>
+</table>
+</center>
+
+</body>
+</html>

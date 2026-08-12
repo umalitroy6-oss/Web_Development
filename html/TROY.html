@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>my multimedia showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>my multimedia showcase</h1>
+    <div class="jump-links">                      
+      <a href="#picture-area">Picture</a>
+      <a href="#audio-area">Audio</a>
+      <a href="#video-area">Video</a>
+    </div>
+  </header>
+
+  <main class="media-container">
+
+    <section id="picture-area" class="media-box top">
+      <h2 class="box-title">my favorite picture</h2>
+      <div class="media-content picture">
+        <img src="trio.jpg" alt="My favorite picture">
+      </div>
+      <div class="caption">This is my favorite picture because it captures a special moment from my childhood with my friends. It means a lot to me because it reminds me of the bond we shared from the very beginning.</div>
+    </section>
+
+    <section id="audio-area" class="media-box center">
+      <h2 class="box-title">my favorite audio</h2>
+      <div class="media-content audio">
+          <h3 class="song-title">Bored by Laufey A.K.A my wife</h3>
+        <audio controls src="Ma wife.mp3"></audio>
+        <div class="lyrics" aria-hidden="false">Why don't we
+Call it for what it is?
+Can't remember the last time we kissed
+And it tickled my heart
+I think that it's best that we spend time apart
+I just yawn
+Listening to you
+Talk about yourself again
+And again
+
+I'm bored
+Bored of this love
+Oh, I'm bored
+Bored of this talk
+And maybe you're just way too vain to be interesting
+Baby, keep talkin' but nobody's listening
+Don't mean to walk out the door
+But, baby, I'm bored
+Bored 
+
+Did you know (did you know)
+I wept in my room last night?
+Bet you didn't know you make me cry
+'Cause you're so self-possessed
+Charming at first, but you've made me depressed
+So I'm leaving in the morning
+
+'Cause I'm bored (bored)
+Bored of this love, oh, I'm bored (bored)
+Bored of this talk, and
+Maybe you're just way too plain to be interesting
+Baby, keep talkin' but nobody's listening
+Don't mean to walk out the door
+But, baby, I'm bored (bored)
+
+You followed me out and said, "Darling, don't leave"
+Your passionate monologue woke up the street
+"I'll marry you someday, you're perfect for me"
+I got in my car just to drown out your plea
+
+'Cause I'm bored (bored)
+Bored of this love, oh, I'm bored (bored)
+Bored of this talk, and
+Maybe you're just way too vain to be interesting
+Baby, keep talkin' but nobody's listening
+Don't mean to walk out the door
+But, baby, I'm bored, oh    </div>
+    </section>
+
+    <section id="video-area" class="media-box bottom">
+      <h2 class="box-title">my favorite Video</h2>
+      <div class="media-content video">
+        <video controls playsinline width="100%" height="auto">
+          <source src="Losestreak method.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="caption">This is my favorite video because it shows me playing rank after rank without winning or losing, and I find that repeated pattern funny and entertaining to watch.</div>
+      </div>
+    </section>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">&copy; 2026</footer>
+
+</body>
+  <script>
+    document.querySelectorAll('.jump-links a').forEach(link => {
+      link.addEventListener('click', event => {
+        const targetId = event.currentTarget.getAttribute('href').substring(1);
+        document.documentElement.classList.remove('show-picture', 'show-audio', 'show-video');
+        document.documentElement.classList.add('show-' + targetId.replace('-area', ''));
+      });
+    });
+  </script>
+</html>

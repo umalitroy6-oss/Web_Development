@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Information Form</title>
+
+</head>
+<body>
+
+<form>
+  <div class="form-header">
+    <h1>Student Information Form</h1>
+    <p>Senior High School Enrollment — Grade 11</p>
+  
+
+  <div class="form-body">
+
+    
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div class="panel">
+
+        <div class="avatar-wrap">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12zm0 2.5c-3.3 0-9.8 1.6-9.8 4.9v2.4h19.6v-2.4c0-3.3-6.5-4.9-9.8-4.9z"/></svg>
+        
+
+    
+          
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter First Name">
+          
+          
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name">
+          
+          
+            <label for="middleInitial">Middle Initial</label>
+            <input type="text" id="middleInitial" name="middleInitial" placeholder="Enter Middle Name">
+          
+        
+
+        
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+          
+          
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password">
+          
+        
+
+        
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="e.g. 16">
+          
+          
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday">
+          
+        
+
+        
+
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" id="contactNumber" name="contactNumber" placeholder="09XXXXXXXXX">
+          
+        
+
+      
+    </fieldset>
+
+    
+    <fieldset>
+      <legend>Student Information</legend>
+      <div class="panel">
+
+        
+          ">
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId" placeholder="e.g. 2526M00242">
+          
+        
+
+        
+          ">
+            <label for="gradeLevel">Grade Level</label>
+            <select id="gradeLevel" name="gradeLevel">
+              <option value="">Select grade level</option>
+              <option value="11">Grade 11</option>
+              <option value="12">Grade 12</option>
+            </select>
+    
+            
+          ">
+            <label for="strand">Strand</label>
+            <select id="strand" name="strand">
+              <option value="">Select strand</option>
+              <option value="stem">STEM</option>
+              <option value="abm">ABM</option>
+              <option value="humss">HUMSS</option>
+              <option value="gas">GAS</option>
+              <option value="tvl">TVL</option>
+            </select>   
+    </fieldset>
+
+    
+    <fieldset>
+      <legend>Additional Information</legend>
+
+        <span class="group-label">Gender</span>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="gender" value="male"> Male</label>
+          <label class="radio-option"><input type="radio" name="gender" value="female"> Female</label>
+          <label class="radio-option"><input type="radio" name="gender" value="na"> Prefer not to say</label>
+        
+
+        <span class="group-label">Hobbies</span>
+        
+          <label class="checkbox-option"><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+          <label class="checkbox-option"><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+          <label class="checkbox-option"><input type="checkbox" name="hobbies" value="sports"> Playing Sports</label>
+          <label class="checkbox-option"><input type="checkbox" name="hobbies" value="movies"> Watching Movies</label>
+          <label class="checkbox-option"><input type="checkbox" name="hobbies" value="games"> Playing Games</label>
+          <label class="checkbox-option"><input type="checkbox" name="hobbies" value="music"> Music</label>
+        
+
+        
+          <label for="address">Complete Address</label>
+          <textarea id="address" name="address" maxlength="250" placeholder="House No., Street, Barangay, City/Municipality, Province"></textarea>
+          <div class="hint">Maximum of 250 characters.
+        
+
+      
+    </fieldset>
+
+    <div class="actions">
+      <button type="submit" class="btn btn-submit">Submit</button>
+      <button type="reset" class="btn btn-reset">Reset</button>
+    
+
+  
+</form>
+</body>
+</html>
